@@ -1,0 +1,123 @@
+/*RESET*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Body Styles*/
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #19a1ae;
+  position: relative;
+  overflow: hidden;
+}
+.top,
+.bottom {
+  width: 978px;
+  height: 976px;
+  position: absolute;
+}
+.top {
+  top: -600px;
+  left: -300px;
+}
+.bottom {
+  bottom: -600px;
+  right: -300px;
+}
+/*Card styles*/
+.card {
+  width: 350px;
+  height: 374px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 1;
+}
+
+/*Img Styles*/
+
+img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*Profile Pic Styles*/
+
+.profile-pic {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 4px solid #ffffff;
+}
+
+/*Txt Styles*/
+
+.name {
+  display: inline;
+  color: #2e3349;
+  font-size: 18px;
+  font-weight: bold;
+}
+.age {
+  font-size: 18px;
+  color: #6b7082;
+}
+.location {
+  font-size: 14px;
+  color: #6b7082;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 10px;
+  color: #979797;
+}
+/*Stats Styles*/
+
+.stats {
+  display: flex;
+  height: 88px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.photos > p,
+.likes > p,
+.followers > p {
+  font-size: 10px;
+  color: #6b7082;
+}
+.followers > .bold,
+.likes > .bold,
+.photos > .bold {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2e3349;
+}
+
+/*Mobile Styles*/
+
+@media (max-width: 500px) {
+  .card {
+    width: 327px;
+  }
+
+  .top {
+    top: -700px;
+    left: -500px;
+  }
+  .bottom {
+    bottom: -700px;
+    right: -500px;
+  }
+}
